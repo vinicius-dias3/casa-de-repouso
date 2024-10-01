@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    /* background-color: #001D21; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 135rem;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 3px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: -20px;
+    margin: 0 21px;
+    background-color: #f3b816;
+    background-color: darkolivegreen;
+    animation-timeline: scroll(root);
+    animation-name: progress-bar;
+    animation-duration: auto;
+    animation-timing-function: linear;
+}
+
+@keyframes progress-bar{
+    0%{width: 0;} 
+    100%{width: 100%;}
+}
+
+.general-container{
+    width: 90%;
+    min-height: 100vh;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.general-container .hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    margin: 30px 0 20px;
+}
+
+.general-container .hero .text{
+    width: 30%;
+    margin-top: 6rem;
+    /* background-color: #f3b816; */
+}
+
+.general-container .hero h1{
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    line-height: 4.2rem;
+}
+
+.general-container .hero h3{
+    font-weight: normal;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.general-container .hero .whatsapp-btn{
+    background-color: rgb(52, 218, 135);
+    background-color: rgb(33, 167, 100);
+    color: white;
+    width: 151px;
+    padding: 12px 15px;
+    border-radius: 12px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .9rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .whatsapp-btn::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgb(33, 167, 100);
+    background-color: rgb(52, 218, 135);
+    transition: all .3s ease-in-out;
+}
+
+.whatsapp-btn:hover::after{
+    left: 0;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.general-container .hero .whatsapp-btn .fa-whatsapp{
+    font-size: 3rem;
+}
+
+.general-container .hero .image{
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.general-container .hero .image img{
+    /* width: 100%; */
+    height: 100%;
+}
+
+.jornada {
+    
+}
