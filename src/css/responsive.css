@@ -1,0 +1,94 @@
+@media(max-width: 1024px){
+    .general-container{
+        /* background-color: antiquewhite; */
+        padding: 1rem 2rem;
+    }
+
+    .general-container .services{
+        width: 114%;
+    }
+
+    .gallery .images{
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    }
+
+}
+/* @media(max-width: 426px){ */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Suas regras de estilo aqui */
+
+    .header{
+        padding: 1rem 2rem;
+    }
+
+    .about .description > li:nth-child(3){
+        margin-top: -4rem;
+    }
+  }
+  
+
+@media(max-width: 768px){
+    .general-container{
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .header .nav .hamburguer-button{
+        display: block;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+
+    .header .nav .hamburguer-button + .menu{
+        position: absolute;
+        z-index: 1;
+        top: 6rem;
+        right: 0;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .general-container .hero{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .general-container .hero h1{
+        width: 100%;
+    }
+
+    .general-container .hero .text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .general-container .hero .image{
+        /* width: 100%; */
+        background-color: brown;
+        /* text-align: center; */
+    }
+
+    .general-container .hero .image img{
+        width: 100%;
+        /* height: auto; */
+    }
+
+    .general-container .services{
+        width: 100%;
+        margin-left: 0;
+        padding: 2rem;
+    }
+
+    .about{
+        padding: 2rem 2%;
+    }
+
+    .about .description > li:nth-child(2),
+    .about .description > li:nth-child(3){
+        margin-top: 0;
+    }
+}

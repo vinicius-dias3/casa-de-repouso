@@ -6,6 +6,7 @@ html {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #1d1d1d;
 }
 
 body{
@@ -15,6 +16,7 @@ body{
     align-items: center;
     justify-content: center;
     max-width: 135rem;
+    max-width: 100vw;
 }
 
 .progress-bar{
@@ -39,20 +41,48 @@ body{
 }
 
 .general-container{
-    width: 90%;
+    width: 100%;
     min-height: 100vh;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
+    /* background-color: lightcoral; */
+    /* padding: 0 6.5rem; */
+    background-color: rgb(255, 248, 238);
+}
+
+.general-container h1{
+    /* color: #353536; */
+    color: #1d1d1d;
+}
+
+.general-container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #1d1d1d;
+}
+.general-container p{
+    font-size: 1.3rem;
+}
+
+.general-container section{
+    /* margin-left: 7rem;
+    margin-right: 7rem; */
 }
 
 .general-container .hero{
+    /* background-color: cadetblue; */
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 1.6rem 7rem;
     gap: 20px;
     align-items: center;
     position: relative;
-    margin: 30px 0 20px;
+    /* margin: 3rem 0 11rem; */
+    /* max-width: 110rem; */
+    margin: auto;
 }
 
 .general-container .hero .text{
@@ -116,15 +146,227 @@ body{
 }
 
 .general-container .hero .image{
-    max-height: 400px;
+    max-height: 450px;
+    /* height: 450px;
+    width: 500px; */
+    /* width: 100%; */
+    /* height: 400px;
+    width: 450px; */
     overflow: hidden;
 }
 
 .general-container .hero .image img{
-    /* width: 100%; */
-    height: 100%;
+    /* object-fit: contain;
+    width: 100%;
+    height: 100%; */
 }
 
-.jornada {
-    
+
+.services{
+    background-color: chocolate;
+    background-color: rgb(205, 233, 243);
+    background-color: rgb(173, 198, 207);
+    /* background-color: rgb(125, 161, 173); */
+    /* width: 110%; */
+    /* width: calc(10%); */
+    /* margin-left: -6.1rem; */
+    margin-top: 3rem;
+    padding: 2rem 7rem;
+    max-width: 100%;
+}
+
+.services h2{
+    color: #1d1d1d;
+    /* font-weight: 700; */
+
+}
+
+.services ul{
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    /* background-color: #f3b816; */
+}
+
+.services ul li{
+    border-radius: 6px;
+}
+
+
+.services ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* grid-template-rows: min(200px); */
+    grid-gap: 2rem;
+}
+
+.services ul li img{
+    align-self: flex-start;
+    /* display: block; */
+}
+
+.services ul li {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: .8rem;
+    padding: 1rem;
+    background-color: rgb(173, 198, 207);
+    background-color: rgb(205, 233, 243);
+}
+
+.services ul li h4{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.services ul li p{
+    line-height: 1.9rem;
+}
+
+
+.about{
+    margin-top: 3rem;
+    padding: 2rem 7rem;
+    background-color: pink;
+}
+
+.about .description{
+    min-height: 400px;
+    width: 100%;
+    padding: 4rem 2rem;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-gap: 1.5rem;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.8);
+    background-image: url(../images/pexels-karolina-grabowska-5207029.jpg);
+    background: url(../images/pexels-karolina-grabowska-5207015.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about .description > li{
+    border-radius: 0 12px 0px 25px;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    /* width: 250px; */
+    padding: 2rem;
+    line-height: 2.2rem;
+    height: 220px;
+}
+
+.about .description > li:nth-child(2){
+    /* background-color: #f3b816; */
+    margin-top: 20rem;
+}
+
+.about .description > li:nth-child(3){
+    margin-top: 40rem;
+}
+
+.about .description > li h4{
+    margin-bottom: 1.4rem;
+    /* font-size: 1.3rem; */
+}
+
+.about .description > li ul{
+    margin-left: .8rem;
+}
+
+.about .description > li ul li{
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+.about .description .values li::before{
+    content: '\f005';
+    font-family: "Font Awesome 5 Free";
+    /* font-weight: bold; */
+    position: absolute;
+    left: 1.2rem;
+}
+
+.gallery{
+    margin-top: 4rem;
+}
+
+.gallery .images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(minmax(330px, 1fr));
+    grid-gap: 1rem;
+
+}
+
+.gallery .images img{
+    max-width: 100%;
+    /* height: 200px; */
+    /* height: 100%; */
+    object-fit: contain;
+}
+
+.footer{
+    background-color: lightblue;
+    background-color: rgb(173, 198, 207);
+    padding: 2rem 4rem 0.5rem;
+    margin-top: 4rem;
+}
+
+.footer h4{
+    font-size: 2.2rem;
+    margin-bottom: 1.7rem;
+}
+
+.footer nav ul li{
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.footer nav ul li a{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.footer nav ul svg{
+    font-size: 2rem;
+}
+
+.footer h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.footer span{
+    text-align: center;
+    margin: auto;
+}
+
+.arrow-up{
+    position: fixed;
+    right: 1rem;
+    bottom: 4rem;
+    display: none;
+}
+
+.arrow-up.show{
+    display: block;
+    animation: move-arrow-up .9s infinite alternate linear;
+}
+
+@keyframes move-arrow-up{
+    0%{
+        bottom: 50px
+    }100%{
+        bottom: 40px;
+    }
 }
