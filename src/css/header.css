@@ -1,22 +1,25 @@
 .header {
     height: 70px;
-    padding: 1rem 7rem;
+    padding: 0rem 7rem;
     position: relative;
     display: flex;
     justify-content: space-between;
     background-color: rgb(173, 198, 207);
 }
 
+.header img{
+    width: 70px;
+    height: 70px;
+}
+
 .header .nav {
     display: flex;
-    /* background-color: lightcoral; */
-    justify-content: space-between;
     align-items: center;
 }
 
 .header .nav .hamburguer-button {
     display: none;
-    color: #C1D3DB;
+    color: #235970;
     padding: 14px;
     letter-spacing: 2px;
     font-weight: 700;
@@ -50,14 +53,12 @@
     transform: scale(1.3);
 }
 
-/* configuração abaixo não está entrando. N]ao é necessário. Vamos ver até o final do projeto se removo o sinal de mais e .hamburguer neste seletor, deixando só .nav .menu */
 .header .nav .hamburguer-button + .menu{
     /* background-color: lightseagreen; */
     /* background-color: rgb(173, 198, 207); */
     display: flex;
-    justify-content: end;
-    gap: 4rem;
-    color: #235970;
+    gap: 3.8rem;
+    color: rgb(35, 89, 112);
     padding: 10px;
     opacity: 1;
     font-size: 20px;
@@ -71,7 +72,6 @@
 
 .nav .hamburguer-button+.menu-closed{
     display: none;
-    opacity: 0;
 }
 
 .nav .menu li a::before{

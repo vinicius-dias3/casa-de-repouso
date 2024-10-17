@@ -18,11 +18,7 @@ function handleMediaQueryChange(){
         console.log('entre 768px e 1024px')
         console.log('TAMANHO MEDIO')
         toggleMenu(true) //funcionando corretamente, menu aberto
-        console.log(menu)
         menu.classList.add('medium')
-        // closeMenu()
-        // toggleMenu(false) //nao funciona
-        // openMenu() //funcionando corretamente
         closeMenuOnItemClick()
     }
 }
