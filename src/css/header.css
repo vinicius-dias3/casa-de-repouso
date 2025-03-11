@@ -1,15 +1,15 @@
 .header {
-    height: 70px;
+    height: 80px;
     padding: 0rem 7rem;
     position: relative;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(173, 198, 207);
+    /* background-color: rgb(173, 198, 207); */
 }
 
 .header img{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 
 .header .nav {
@@ -59,6 +59,9 @@
     display: flex;
     gap: 3.8rem;
     color: rgb(35, 89, 112);
+    color: #9c2902;
+    color: #6b2109;
+    color: #99680e;
     padding: 10px;
     opacity: 1;
     font-size: 20px;

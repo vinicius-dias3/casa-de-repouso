@@ -175,6 +175,7 @@ body{
     background-color: chocolate;
     background-color: rgb(205, 233, 243);
     background-color: rgb(173, 198, 207);
+    background-color: rgb(235, 218, 192);
     /* background-color: rgb(125, 161, 173); */
     /* width: 110%; */
     /* width: calc(10%); */
@@ -182,6 +183,10 @@ body{
     margin-top: 3rem;
     padding: 2rem 7rem;
     max-width: 100%;
+    /* background-image: url(../images/Logo\ -\ Longevita\ Residencial\ Sênior\ -\ ok.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; */
 }
 
 .services h2{
@@ -198,7 +203,29 @@ body{
 .services ul li{
     border-radius: 6px;
     text-wrap: balance;
+    background-image: url(../images/Logo\ -\ Longevita\ Residencial\ Sênior\ -\ ok.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400% 300%;
 }
+
+/* .services ul li:nth-child(1){background-position: -2% -20%;} */
+.services ul li:nth-child(1){background-position: -2% -20%;}
+.services ul li:nth-child(2){background-position: 33% -20%;}
+.services ul li:nth-child(3){background-position: 68% -20%;}
+.services ul li:nth-child(4){background-position: 104% -20%;}
+.services ul li:nth-child(5){background-position: -2% 30%;}
+.services ul li:nth-child(6){background-position: 33% 30%;}
+.services ul li:nth-child(7){background-position: 68% 30%;}
+.services ul li:nth-child(8){background-position: 104% 30%;}
+.services ul li:nth-child(9){background-position: 0% 80%;}
+.services ul li:nth-child(10){background-position: 33% 80%;}
+.services ul li:nth-child(11){background-position: 68% 80%;}
+.services ul li:nth-child(12){background-position: 104% 80%;}
+/* .services ul li:nth-child(12){
+    background-size: cover;
+    background-position: center;
+} */
 
 
 .services ul{
@@ -221,6 +248,7 @@ body{
     padding: 1rem;
     background-color: rgb(173, 198, 207);
     background-color: rgb(205, 233, 243);
+    background-color: rgb(250, 235, 215);
 }
 
 .services ul li h4{
@@ -323,18 +351,22 @@ body{
 .footer{
     background-color: lightblue;
     background-color: rgb(173, 198, 207);
+    background-color: #772003;
+    background-color: #8d2806;
     padding: 2rem 4rem 0.5rem;
     margin-top: 4rem;
+    color: #D2AE6D;
 }
 
 .footer > img{
-    width: 95px;
+    width: 115px;
     /* height: ; */
 }
 
 .footer h4{
     font-size: 2.2rem;
     margin-bottom: 1.7rem;
+    color: #D2AE6D;
 }
 
 .footer nav ul li, 
@@ -354,6 +386,7 @@ body{
 
 .footer nav ul svg{
     font-size: 2rem;
+    fill: #D2AE6D;
 }
 
 .footer h5{
