@@ -1,9 +1,11 @@
-import { setupMenu, toggleMenu, openMenu, closeMenu, closeMenuOnItemClick } from "./modules/menu.js";
+import { setupMenu, toggleMenu, closeMenuOnItemClick } from "./modules/menu.js";
+import { activeCarousel } from "./modules/carousel.js";
 
-setupMenu()
 
 const mediaQuerySmall = window.matchMedia('(max-width: 768px)')
 const mediaQueryLarge = window.matchMedia('(min-width: 1024px)')
+
+activeCarousel()
 
 function handleMediaQueryChange(){
     if(mediaQuerySmall.matches){
@@ -47,3 +49,7 @@ function arrowNavigationToTop(){
     })
 }
 arrowNavigationToTop()
+
+let currentYear = new Date().getFullYear()
+let copyYear = document.querySelector('#copy-year')
+copyYear.textContent = currentYear

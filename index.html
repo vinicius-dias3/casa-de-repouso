@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/styles.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/responsive2.css">
     <!-- <link rel="shortcut icon" href="./src/images/logo-converted2.png" type="image/x-icon"> -->
-    <link rel="shortcut icon" href="./src/images/Logo - Longevita Residencial Sênior - ok.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="./src/images/Logo - Longevita Residencial Sênior - ok.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./src/images/logo-sem-titulo.png" type="image/x-icon">
     <!-- <link rel="shortcut icon" href="./src/icons/logo-longevita-residencial-senior-favicon.png" type="image/x-icon"> -->
     <!-- Google tag (gtag.js) --> 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-31W366M2X2"></script> 
@@ -54,7 +55,6 @@
             <div class="text">
                 <!-- <h1>Residencial Sênior <span>Morada dos Nobres</span></h1> -->
                 <h1>Residencial Sênior <span>Longevitá</span></h1>
-                <!-- <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur praesentium maxime nihil minima in velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, recusandae!</h3> -->
                 <h3>Um novo conceito de moradia para terceira idade.</h3>
                 <!-- <h3>Hospedagem permanente, pós operatório, day care. Atendemos todas as necessidades.</h3> -->
                 <h3>Hospedagem e enfermagem 24 horas, refeições completas e equilibradas, ambiente acolhedor e seguro. Tudo que sua família procura, voce encontra aqui!</h3>
@@ -64,7 +64,15 @@
                 </a>
             </div>
             <!-- <div class="image"><img src="https://placehold.co/600x400" alt=""></div> -->
-            <div class="image"><img src="./src/images/casal-idoso-abracados.jpg" alt="casal idoso abraçado sorrindo"></div>
+            <div class="image-carousel">
+                <img src="./src/images/casal-idoso-abracados.jpg" alt="casal idoso abraçado sorrindo">
+                <div class="carousel-bar">
+                    <button class="btn active">⚪</button>
+                    <button class="btn inactive">⚫</button>
+                    <button class="btn inactive">⚫</button>
+                    <button class="btn inactive">⚫</button>
+                </div>
+            </div>
         </section>
         
         <section class="services" id="services">
@@ -151,17 +159,13 @@
             <ul class="description">
                 <li>
                     <h4>Missão</h4> 
-                    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea facilis ex veritatis eum et quo!</p> -->
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta exercitationem hic. Consequuntur magnam veritatis, culpa vel eaque quasi magni.</p> -->
                     <!-- <p>Trazer a paz de espírito que uma família busca, quando tem um idoso que precisa de cuidados, mas não quer perder sua independencia e socialização</p> -->
-                     <!-- <p>Devolver a tranquilidade </p> -->
                     <!-- <p>Tornar-se um Residencial Senior de referencia, no que diz respeito a cuidados humanizados, ganho de qualidade de vida e bem estar para com nossos clientes.</p> -->
                     <p>Conquistar a confiança dos nossos clientes através de uma equipe multidisciplinar, oferecendo cuidados de qualidade e segurança e dignidade que os idosos merecem.</p>
 
                 </li>
                 <li>
                     <h4>Visão</h4> 
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magni quas dignissimos natus est eum ut commodi incidunt vitae porro voluptatum, eaque ipsam quibusdam. Inventore dolorem doloribus dicta vero nemo?</p> -->
                     <p>Ser reconhecido como o Residencial Sênior de referência em cuidados humanizados, proporcionando qualidade de vida e bem-estar aos nossos clientes.</p>
                     <!-- <p>Mudar a percepção da comunidade para com a melhor idade.</p> -->
                     <!-- <p>Trazer a paz de espírito que uma família busca, quando tem um idoso que precisa de cuidados, mas não quer perder sua independencia e socialização</p> -->
@@ -169,7 +173,6 @@
                 <li>
                     <h4>Valores</h4> 
                     <ul class="values">
-                        <!-- <i class="far fa-star"></i> -->
                         <li>Honestidade</li>
                         <!-- <li>Respeito ao ser humano</li> -->
                         <li>Ética</li>
@@ -220,9 +223,7 @@
 
         
         <footer class="footer" id="footer">
-            <!-- <img src="https://placehold.co/85x65" alt="logotipo"> -->
-            <!-- <img src="./src/images/logo-converted2.png" alt="logotipo"> -->
-             <img src="./src/images/Logo - Longevita Residencial Sênior - ok.png" alt="">
+            <img src="./src/images/Logo - Longevita Residencial Sênior - ok.png" alt="">
             <h4>Contato</h4>
             <nav>
                 <ul>
@@ -246,11 +247,10 @@
                     </li>
                 </ul>
             </nav>
-            <h5>©2024 Residencial Senior Longevitá</h5>
+            <h5>©<span id="copy-year">2024</span> Residencial Senior Longevitá.</h5>
             <span>Desenvolvido por <a href="https://github.com/vinicius-dias3" target="_blank">Vinicius Dias</a></span>
         </footer>
         <button class="arrow-up" id="arrow-up">
-            <!-- <img src="./src/icons/caret-double-up-thin.svg" alt=""> -->
             <img src="./src/icons/caret-double-up.svg" alt="setinha para cima">
         </button>
     </div>

@@ -32,6 +32,7 @@ body{
     margin: 0 21px;
     background-color: #f3b816;
     background-color: darkolivegreen;
+    background-color: rgba(73, 19, 1, 0.8);
     animation-timeline: scroll(root);
     animation-name: progress-bar;
     animation-duration: auto;
@@ -154,7 +155,7 @@ body{
     font-size: 3rem;
 }
 
-.general-container .hero .image{
+.general-container .hero .image-carousel{
     max-height: 450px;
     /* height: 450px;
     width: 500px; */
@@ -162,12 +163,23 @@ body{
     /* height: 400px;
     width: 450px; */
     overflow: hidden;
+    position: relative;
 }
 
-.general-container .hero .image img{
-    /* object-fit: contain;
+.general-container .hero .image-carousel .carousel-bar{
+    position: absolute;
+    content: '';
     width: 100%;
-    height: 100%; */
+    height: 26px;
+    bottom: 0;
+    opacity: .6;
+    background-color: #1d1d1d;
+    background-color: #313131;
+    background-color: #414141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 
@@ -183,16 +195,11 @@ body{
     margin-top: 3rem;
     padding: 2rem 7rem;
     max-width: 100%;
-    /* background-image: url(../images/Logo\ -\ Longevita\ Residencial\ Sênior\ -\ ok.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover; */
 }
 
 .services h2{
     color: #1d1d1d;
     /* font-weight: 700; */
-
 }
 
 .services ul{
@@ -201,32 +208,43 @@ body{
 }
 
 .services ul li{
+    position: relative;
+    z-index: 1; 
+    background-color: hsla(0, 0%, 100%, 0.3);
     border-radius: 6px;
     text-wrap: balance;
-    background-image: url(../images/Logo\ -\ Longevita\ Residencial\ Sênior\ -\ ok.png);
+}
+
+.services ul li::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/logo-sem-titulo.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 400% 300%;
+    opacity: .4;
+    z-index: -1;
 }
 
-/* .services ul li:nth-child(1){background-position: -2% -20%;} */
-.services ul li:nth-child(1){background-position: -2% -20%;}
-.services ul li:nth-child(2){background-position: 33% -20%;}
-.services ul li:nth-child(3){background-position: 68% -20%;}
-.services ul li:nth-child(4){background-position: 104% -20%;}
-.services ul li:nth-child(5){background-position: -2% 30%;}
-.services ul li:nth-child(6){background-position: 33% 30%;}
-.services ul li:nth-child(7){background-position: 68% 30%;}
-.services ul li:nth-child(8){background-position: 104% 30%;}
-.services ul li:nth-child(9){background-position: 0% 80%;}
-.services ul li:nth-child(10){background-position: 33% 80%;}
-.services ul li:nth-child(11){background-position: 68% 80%;}
-.services ul li:nth-child(12){background-position: 104% 80%;}
-/* .services ul li:nth-child(12){
-    background-size: cover;
-    background-position: center;
-} */
 
+.services ul li:nth-child(1)::before{background-position: -2% -2%;}
+.services ul li:nth-child(2)::before{background-position: 33% -2%;}
+.services ul li:nth-child(3)::before{background-position: 68% -2%;}
+.services ul li:nth-child(4)::before{background-position: 103% -2%;}
+
+.services ul li:nth-child(5)::before{background-position: -2% 50%;}
+.services ul li:nth-child(6)::before{background-position: 33% 50%;}
+.services ul li:nth-child(7)::before{background-position: 68% 50%;}
+.services ul li:nth-child(8)::before{background-position: 103% 50%;}
+
+.services ul li:nth-child(9)::before{background-position: -2% 102%;}
+.services ul li:nth-child(10)::before{background-position: 33% 102%;}
+.services ul li:nth-child(11)::before{background-position: 68% 102%;}
+.services ul li:nth-child(12)::before{background-position: 103% 102%;}
 
 .services ul{
     display: grid;
@@ -249,15 +267,18 @@ body{
     background-color: rgb(173, 198, 207);
     background-color: rgb(205, 233, 243);
     background-color: rgb(250, 235, 215);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .services ul li h4{
     font-size: 1.8rem;
     font-weight: 500;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .services ul li p{
     line-height: 1.9rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -296,6 +317,7 @@ body{
     padding: 2rem;
     line-height: 2.2rem;
     height: 220px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .about .description > li:nth-child(2){
@@ -353,6 +375,7 @@ body{
     background-color: rgb(173, 198, 207);
     background-color: #772003;
     background-color: #8d2806;
+    background-color: #491301;
     padding: 2rem 4rem 0.5rem;
     margin-top: 4rem;
     color: #D2AE6D;
@@ -366,7 +389,6 @@ body{
 .footer h4{
     font-size: 2.2rem;
     margin-bottom: 1.7rem;
-    color: #D2AE6D;
 }
 
 .footer nav ul li, 

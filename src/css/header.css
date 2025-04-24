@@ -8,8 +8,8 @@
 }
 
 .header img{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 
 .header .nav {
@@ -19,7 +19,7 @@
 
 .header .nav .hamburguer-button {
     display: none;
-    color: #235970;
+    color: #99680e;
     padding: 14px;
     letter-spacing: 2px;
     font-weight: 700;
@@ -40,7 +40,7 @@
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     position: absolute;
-    bottom: 2.5rem;
+    bottom: 2.8rem;
     right: 8rem;
 }
 
@@ -87,6 +87,8 @@
     width: 1px;
     height: 0;
     background-color: #C1D3DB;
+    background-color: #99680e;
+    background-color: #d2ae6d;
     /* background-color: palevioletred; */
     transition: all .7s cubic-bezier(0.53, 0.06, 0, 0.89);
 }
@@ -108,4 +110,6 @@
 .nav .hamburguer-button:hover,
 .nav .menu li a:hover{
     color: #0d3338;
+    color: #6b2109;
+    color: rgba(73, 19, 1, 0.8);
 }
