@@ -9,21 +9,6 @@ export function toggleMenu(isOpen){
     menu.classList.remove('medium')
 }
 
-// export function openMenu(){
-//     btnMenu.setAttribute('aria-expanded', 'true')
-//     menu.setAttribute('aria-hidden', 'false')
-//     menu.classList.remove('menu-closed')
-//     menu.classList.add('menu')
-// }
-
-// export function closeMenu(){
-//     btnMenu.setAttribute('aria-expanded', 'false')
-//     menu.setAttribute('aria-hidden', 'true')
-//     menu.classList.remove('menu')
-//     menu.classList.add('menu-closed')
-//     console.log('closeMenu chamada')
-// }
-
 export function closeMenuOnClickOutside(event){
     if(!menu.contains(event.target) && !btnMenu.contains(event.target)){
         toggleMenu(false)

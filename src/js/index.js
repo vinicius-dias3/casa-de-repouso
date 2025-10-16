@@ -1,11 +1,19 @@
 import { setupMenu, toggleMenu, closeMenuOnItemClick } from "./modules/menu.js";
-import { activeCarousel } from "./modules/carousel.js";
+import { AtualizarCarrossel, initCarousel } from "./modules/carousel.js";
 
 
 const mediaQuerySmall = window.matchMedia('(max-width: 768px)')
 const mediaQueryLarge = window.matchMedia('(min-width: 1024px)')
 
-activeCarousel()
+document.addEventListener('DOMContentLoaded', () =>{
+    initCarousel({auto: true, interval: 4000})
+    
+    addMediaQueryListerners()
+    setupMenu()
+    handleMediaQueryChange()
+})
+AtualizarCarrossel()
+
 
 function handleMediaQueryChange(){
     if(mediaQuerySmall.matches){
@@ -29,10 +37,6 @@ function addMediaQueryListerners(){
     mediaQuerySmall.addEventListener('change', handleMediaQueryChange)
     mediaQueryLarge.addEventListener('change', handleMediaQueryChange)
 }
-
-addMediaQueryListerners()
-handleMediaQueryChange()
-
 
 const arrowUp = document.querySelector('#arrow-up')
 

@@ -80,9 +80,11 @@ body{
 }
 
 .general-container .hero .text{
-    width: 30%;
+    width: 40%;
     margin-top: 6rem;
-    /* background-color: #f3b816; */
+    background-color: #f3b816;
+    background-color: rgb(235, 218, 192);
+    padding: 1rem;
 }
 
 .general-container .hero h1{
@@ -155,8 +157,10 @@ body{
     font-size: 3rem;
 }
 
-.general-container .hero .image-carousel{
-    max-height: 450px;
+.general-container .hero .carousel{
+    max-height: 500px;
+    height: 500px;
+    width: 50%;
     /* height: 450px;
     width: 500px; */
     /* width: 100%; */
@@ -164,24 +168,63 @@ body{
     width: 450px; */
     overflow: hidden;
     position: relative;
+    /* display: flex; */
+    /* background-color: #8d2806; */
+    padding: 1rem;
 }
 
-.general-container .hero .image-carousel .carousel-bar{
+.general-container .hero .carousel img{
+    /* width: 100%; */
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.general-container .hero .carousel img.fade-out{
+    opacity: .1
+}
+
+@keyframes fade-out{
+    0%{
+        opacity:1;
+    }90%{
+        opacity: .9;
+    }100%{
+        opacity: .1;
+    }
+
+}
+
+.general-container .hero .carousel .indicators{
     position: absolute;
     content: '';
     width: 100%;
     height: 26px;
-    bottom: 0;
+    bottom: 10px;
     opacity: .6;
-    background-color: #1d1d1d;
     background-color: #313131;
-    background-color: #414141;
+    background-image: linear-gradient(to right, rgb(177, 177, 177), #414141, rgb(177, 177, 177));
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
+.indicators .indicator{
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+    appearance: none;
+    transition: background-color .3s;
+}
+
+.indicators .indicator:checked{
+    background-color: #fff;
+}
 
 .services{
     background-color: chocolate;

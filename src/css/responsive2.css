@@ -71,6 +71,14 @@
 
 @media (max-width: 900px){
     /* tablet retrato */
+    .general-container .hero{
+        padding: 1rem;
+    }
+
+    .general-container .hero .carousel{
+        width: 100%;
+    }
+
     .services ul li::before{
         background-size: 400% 500%;
     }
